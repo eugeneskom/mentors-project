@@ -1,0 +1,11 @@
+.about {
+  &__content {
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
