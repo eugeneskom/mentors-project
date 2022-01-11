@@ -1,5 +1,11 @@
 .skills {
 
+  &__wrapper{
+    @include rmin($r-lg){
+      display: flex;
+    }
+  }
+
   &__box {
     flex: 1;
   }
@@ -10,6 +16,9 @@
     max-height: 450px;
     height: 100%;
     object-fit: cover;
+    @include r($r-lg){
+      margin: 0 auto;
+    }
     
   }
 

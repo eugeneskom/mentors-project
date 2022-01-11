@@ -1,4 +1,7 @@
-const plugins = [];
+const plugins = [
+  "node_modules/jquery/dist/jquery.js",
+  "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"
+];
 const {
 	src,
 	dest

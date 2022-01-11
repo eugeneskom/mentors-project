@@ -1,0 +1,13 @@
+.footer{
+  height: 100px;
+  background-color: $footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include rmin($r-md){
+    height: 153px;
+  }
+
+  &__logo{
+  }
+}

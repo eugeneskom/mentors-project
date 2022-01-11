@@ -1,0 +1,103 @@
+.contacts {
+  font-size: 16px;
+
+  &__inner{
+    @include rmin($r-md){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+
+  &__connect {
+    @include rmin($r-md) {
+      max-width: 530px;
+      width: 100%;
+      margin-right: 8.5%;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__group {
+    margin-bottom: 31px;
+
+    @include rmin($r-md) {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__link {
+    color: $highlight;
+    line-height: 1.3;
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  margin-bottom: 32px;
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: $highlight;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--insta {
+      mask-image: url('../img/icons/social/insta.svg');
+    }
+
+    &--fb {
+      mask-image: url('../img/icons/social/fb.svg');
+    }
+
+    &--tg {
+      mask-image: url('../img/icons/social/tg.svg');
+    }
+  }
+
+}
+
+.form {
+  
+  &__label{
+    font-size: 14px;
+    line-height: 1.3;
+    @include open-semi;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    outline: transparent;
+    background-color: $dark-bg;
+    color: $pholder;
+    border:none;
+    padding-left: 15px;
+    @include open-regular;
+  }
+  
+  &__input {
+    height: 44px;
+    margin-top: 10px;
+  }
+  &__textarea{
+    height: 115px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    resize: none;
+  }
+}

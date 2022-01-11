@@ -42,5 +42,8 @@
     "require-dir": "^1.2.0",
     "vinyl-ftp": "^0.6.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "jquery": "^3.6.0"
+  }
 }
